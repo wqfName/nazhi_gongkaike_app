@@ -1,0 +1,44 @@
+<template name="jinxuan">
+  <view class='column item-tp mr-20 const-float' bindtap='keitem' data-idr='{{id}}'
+   style='min-height:300rpx;position:relative;'>
+    <image src='{{suolvetu}}' class='indeximg-1'></image>
+    <text class='indexTitle'>{{title}}</text>
+    <!-- <view class='row'>
+      <view class='row mt-5 zaixue'>
+        <image src='../../image/video-3.png' class='video-3'></image>
+        <text class='item-1-font'>333人在学</text>
+      </view>
+    </view> -->
+  </view>
+</template>
+
+<template name="remen">
+  <view class="row mt-20" bindtap='keitem' data-idr='{{id}}'>
+    <image src='{{suolvetu}}' class='img-2-class'style="min-width:210rpx;"></image>
+    <view class="column ml-30">
+      <view class='indexTitle'>{{title}}</view>
+      <!-- <view class='indexTitle-2'> 如何不再怯场？</view> -->
+      <view class='row postbottom'>
+        <image src='../../image/video-3.png' class='video-3'></image>
+        <text class='item-1-font'>123143人在学</text>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="Gomai">
+  <view class='row foodview bgcw'>
+    <text class='jiage'>￥{{jiage}}</text>
+    <view class='choucang column'>
+      <view style="width:40rpx;height:40rpx;margin-left:24rpx; margin-top:10rpx;">
+        <image src='../../image/shoucang-2.svg' style="width:40rpx;height:40rpx;display:block;"></image>
+      </view>
+      <text class='iocnfoodfont'>收藏</text>
+    </view>
+    <view class='goumai_btn'>立即购买</view>
+  </view>
+</template>
+
+<template name="cz_btn">
+  <view class='cz_btn_item cz_btnfullborder' data-index='{{index}}' bindtap='chongzhiBtnfull'>{{i}}元</view>
+</template>

@@ -1,0 +1,43 @@
+<import src="../../weapp_template/weapp_template.wxml" />
+
+<view class='column'>
+
+<view class="search row" bindtap='search'>
+  <image src='../../image/search.png' class='search-iocn mt-20 ml-20'></image>
+  <text class='search-font'>纳职公开课</text>
+</view>
+
+<view class='w100'>
+  <view class='row ml-40'>
+    <text class='template-title'>精选推荐</text>
+    <view class='r-position row' data-id="0" bindtap='genduo'>
+      <text class="genduo">更多</text>
+      <image src='../../image/chevron-right.png' class='indexright'></image>
+    </view>
+  </view>
+
+  <view class='constpadding w100'>
+    <block wx:for="{{index}}" wx:key="">
+      <template is="jinxuan" data="{{...item}}" />
+    </block>
+  </view>
+</view>
+<view class='huan const_bbottom row' style='margin-top:50rpx;'>
+</view>
+
+<view class='mt-40'>
+  <view class='row ml-40'>
+    <text class='template-title'>近期热门</text>
+    <view class='r-position row' data-id="1" bindtap='genduo'>
+      <text class="genduo">更多</text>
+      <image src='../../image/chevron-right.png' class='indexright'></image>
+    </view>
+  </view>
+</view>
+
+<view class='column constpadding-2'>
+  <block wx:for="{{index}}" wx:key="">
+    <template is="remen" data="{{...item}}" />
+  </block>
+</view>
+</view>

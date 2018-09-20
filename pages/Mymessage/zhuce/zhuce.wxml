@@ -1,0 +1,63 @@
+<view class="row const-row bgcw const_bbottom Constrow-h" bindtap='updateface'>
+  <text class='myfont tabfontcolor'>头像</text>
+   <image src="{{face==''?'../../../image/defaultface.svg':face}}" class='face' style='margin-top: 10rpx;'></image> 
+</view>
+<view class="row const-row bgcw const_bbottom Constrow-h" bindtap='showmoal_nickname'>
+  <text class='myfont tabfontcolor'>昵称</text>
+      <view class='row r-position'>
+      <text class='constMoneyFont font-r'>{{nickname}}</text>
+      <image src='../../../image/chevron-right.png' class='rightMax mt-40 ml-10'></image>
+    </view>
+</view>
+<picker range='{{selectSex}}' bindchange='setSex'>
+ <view class="row const-row bgcw const_bbottom Constrow-h">
+ <text class='myfont tabfontcolor'>性别</text>
+      <view class='row r-position'>
+      <text class='constMoneyFont font-r'>{{sex}}</text>
+      <image src='../../../image/chevron-right.png' class='rightMax mt-40 ml-10'></image>
+    </view>
+</view>
+</picker>
+<view class="row const-row bgcw const_bbottom Constrow-h" bindtap='showmoal_phonenumber'>
+  <text class='myfont tabfontcolor'>电话</text>
+        <view class='row r-position'>
+      <text class='constMoneyFont font-r'>{{phonenumber}}</text>
+      <image src='../../../image/chevron-right.png' class='rightMax mt-40 ml-10'></image>
+    </view>
+</view>
+  <view class="row const-row bgcw const_bbottom Constrow-h">
+  <text class='myfont tabfontcolor'>省份</text>
+         <view class='row r-position'>
+      <text class='constMoneyFont font-r'>{{Province}}</text>
+      <image src='../../../image/chevron-right.png' class='rightMax mt-40 ml-10'></image>
+    </view>
+</view>
+<picker range='{{selectCity}}' bindchange='setCity'>
+<view class="row const-row bgcw const_bbottom Constrow-h">
+  <text class='myfont tabfontcolor'>城市</text>
+         <view class='row r-position'>
+      <text class='constMoneyFont font-r'>{{city}}</text>
+      <image src='../../../image/chevron-right.png' class='rightMax mt-40 ml-10'></image>
+    </view>
+</view>
+</picker>
+<view class='column mt-40'>
+ <button class='save' bindtap='setuserinfo'>保存</button>
+ <button class='wxdl mt-20' plain="true" style='background-color:transparent;border:none; color: #50E3C2;' open-type='getUserInfo' bindgetuserinfo='getuserinfo'>微信登录</button>
+</view>
+
+<!--昵称  -->
+<view wx:if='{{moalhidde_nickname}}' class='bgcw login'>
+  <textarea style='width:85%;height:50%;border:1rpx solid #B3B3B3;margin:40rpx auto;font-size:30rpx;padding:10rpx;' bindblur='setnickname' placeholder='请输入您的昵称.....'></textarea>
+  <button style='background-color:transparent;border:none;' class='search-btn' plain="true">确定</button>
+</view> 
+<view class='anim' wx:if='{{moalhidde_nickname}}' catchtouchmove="preventTouchMove" bindtap='showmoal_nickname'>
+</view>
+
+<!--电话  -->
+ <view wx:if='{{moalhidde_phonenumber}}' class='bgcw login'>
+  <textarea style='width:85%;height:50%;border:1rpx solid #B3B3B3;margin:40rpx auto;font-size:30rpx;padding:10rpx;' bindblur='setphonenumber' placeholder='请输入您的电话.....'></textarea>
+  <button style='background-color:transparent;border:none;' class='search-btn' plain="true">确定</button>
+</view> 
+<view class='anim' wx:if='{{moalhidde_phonenumber}}' catchtouchmove="preventTouchMove" bindtap='showmoal_phonenumber'>
+</view>

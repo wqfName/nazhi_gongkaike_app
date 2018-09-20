@@ -1,0 +1,54 @@
+@import "../style/constCss.wxss";
+
+page{
+  background-color:#f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.laoshijieshao{
+    width: 100%;
+}
+.titleAndxingxi{
+  width: 100%;
+}
+
+.itempadding{
+  padding: 20rpx 40rpx 30rpx 40rpx;
+}
+.zhujiangren{
+  min-width: 100%;
+  height: 110rpx;
+}
+.teacherface-img{
+  max-width: 240rpx;
+  max-height: 240rpx;
+  border-radius: 50%;
+  border: 4.2px solid #cbcbcb;
+  margin-top: 45rpx;
+  margin-left: 40rpx;
+}
+.teacherface-view{
+  padding-bottom: 20rpx;
+}
+.teacherFont{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  letter-spacing: 2rpx;
+}
+.teacherName{
+  margin-left: 20rpx;
+  margin-top: 45rpx;
+  color: #04364f;
+  font-weight: bold;
+  letter-spacing: 8rpx;
+}
+.staticfont{
+  white-space: nowrap;
+  margin-right: 20rpx;
+  color: #2b2b2b;
+  letter-spacing: 4rpx;
+}

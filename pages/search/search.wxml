@@ -1,0 +1,8 @@
+<form bindsubmi="searchfrom">
+  <view class="search-item bgcw const_bbottom row">
+  <view class='search-const mt-20 search-font ml-40'>
+    <input style='text' placeholder='请在这里输入你想搜索的内容...' class='search-ipt ml-20'></input>
+  </view>
+   <button form-type='submit' class='search-btn ml-40 bgcw' plain="true" style='background-color:transparent;border:none;'>搜索</button>
+</view>
+</form>

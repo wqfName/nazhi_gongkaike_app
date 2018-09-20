@@ -1,0 +1,7 @@
+@import "../../style/constCss.wxss";
+
+.chongzhi_ipt{
+  width: 64rpx;
+  height: 64rpx;
+  font-size: 32rpx;
+}
