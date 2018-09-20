@@ -1,7 +1,0 @@
-<import src="../../weapp_template/weapp_template.wxml" />
-
- <view class='constpadding'> 
-  <block wx:for="{{index}}" wx:for-item="item" wx:key="">
-    <template is ="jinxuan" data="{{...item}}"/>
-  </block>
- </view> 

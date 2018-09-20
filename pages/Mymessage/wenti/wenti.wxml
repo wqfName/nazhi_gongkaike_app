@@ -1,6 +1,0 @@
-
-
-<form bindsubmit='fankui'>
-<textarea style='margin:20px auto;padding:20rpx;line-height:30px;' class='consttextarea' name="wenti" placeholder='在这里输入你要反馈的信息...'></textarea>
-<button form-type="submit" class='fankui'>反馈</button>
-</form>
