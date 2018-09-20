@@ -1,0 +1,23 @@
+@import "../../style/constCss.wxss";
+
+
+page{
+  background-color: #F7F7F7;
+}
+.consttextarea{
+  letter-spacing: 8rpx;
+  background-color: #fff;
+  border-radius: 14rpx;
+  font-size: 14px;
+  color: #444444;
+}
+
+.fankui{
+  width: 80%;
+  height: 80rpx;
+  background-color: #50E3C2;
+  margin-top: 40rpx;
+  border:none;
+  color:white;
+  line-height: 80rpx;
+}

@@ -1,0 +1,35 @@
+@import "../../style/constCss.wxss";
+
+.rightMax{
+  width: 14rpx;
+  height: 26rpx;
+}
+.constMoneyFont{
+	height: 16px;
+	font-family: STHeitiSC-Light;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  color: #777;
+  line-height: 108rpx;
+}
+.search-btn{
+  font-size: 28rpx;
+  line-height: 90rpx;
+  border:1rpx solid white;
+  
+}
+.save{
+  width: 80%;
+  height: 80rpx;
+  background-color: #50E3C2;
+  margin-top: 40rpx;
+  border:none;
+  color:white;
+  line-height: 80rpx;
+}
+.wxdl{
+  font-size: 28rpx;
+  color: #50E3C2;
+}
